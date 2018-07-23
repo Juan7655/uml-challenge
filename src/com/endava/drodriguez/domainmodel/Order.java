@@ -27,7 +27,7 @@ public class Order {
     public double setTotal() {
         double t = 0;
 
-        // for each item
+        //calculates total value with the sum of the products of unitary price times quantity
         for(LineItem i : this.items) t += (i.getPrice() * i.getQuantity());
 
         return t;
