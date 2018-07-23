@@ -4,6 +4,7 @@ import com.endava.drodriguez.domainmodel.LineItem;
 import com.endava.drodriguez.domainmodel.Order;
 import com.endava.drodriguez.domainmodel.OrderStatus;
 import com.endava.drodriguez.domainmodel.Product;
+import com.endava.drodriguez.pattern.Client;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -20,6 +21,10 @@ public class Main {
 
             o.addItem(new LineItem(4, 2700, new Product(1, "Chocorramo", "Ponqué")));
             System.out.println("Valor: " + o.setTotal());
+        }
+
+        {// code for second point. AbstractFactory pattern
+            Client c = new Client();
         }
     }
 }
