@@ -10,6 +10,15 @@ public class Account {
     private List<Address> addresses;
     private List<PaymentMethod> methods;
 
+    public Account(int id, Customer customer, AccountStatus status, ShoppingCart cart, List<Address> addresses, List<PaymentMethod> methods) {
+        this.id = id;
+        this.customer = customer;
+        this.status = status;
+        this.cart = cart;
+        this.addresses = addresses;
+        this.methods = methods;
+    }
+
     public void addMethod(PaymentMethod p){
         this.methods.add(p);
     }
@@ -27,5 +36,13 @@ public class Account {
 
     public void destroyAddresses(){
         this.addresses.clear();
+    }
+
+    public void printMethods(){
+        for(PaymentMethod p:methods) System.out.println(p);
+    }
+
+    public void printAddresses(){
+        for(Address a: addresses) System.out.println(a);
     }
 }

@@ -9,4 +9,12 @@ public class Client {
     private ProductB prodBX = factoryX.createProductB();
     private ProductB prodBY = factoryY.createProductB();
 
+    public void printAll(){
+        prodAX.testProduct();
+        prodBX.testProduct();
+        prodAY.testProduct();
+        prodBY.testProduct();
+
+    }
+
 }
