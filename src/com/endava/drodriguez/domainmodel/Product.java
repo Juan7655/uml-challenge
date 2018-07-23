@@ -1,6 +1,6 @@
-package com.company;
+package com.endava.drodriguez.domainmodel;
 
-class Product {
+public class Product {
     private int sku;
     private String name;
     private String description;

@@ -1,8 +1,8 @@
-package com.company;
+package com.endava.drodriguez.domainmodel;
 
 import java.util.List;
 
-class ShoppingCart {
+public class ShoppingCart {
     private List<LineItem> items;
 
     public void addItem(LineItem i){

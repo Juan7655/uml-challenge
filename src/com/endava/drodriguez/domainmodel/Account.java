@@ -1,4 +1,4 @@
-package com.company;
+package com.endava.drodriguez.domainmodel;
 
 import java.util.List;
 
@@ -19,6 +19,9 @@ public class Account {
     }
 
     public void destroyMethods(){
+        for (PaymentMethod p : methods){
+            p.destroy();
+        }
         this.methods.clear();
     }
 

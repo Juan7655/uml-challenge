@@ -1,4 +1,4 @@
-package com.company;
+package com.endava.drodriguez.domainmodel;
 
 public class Address {
     private int id;

@@ -1,4 +1,4 @@
-package com.company;
+package com.endava.drodriguez.domainmodel;
 
 import java.util.Date;
 import java.util.List;
@@ -27,7 +27,8 @@ public class Order {
     public double setTotal() {
         double t = 0;
 
-        for(LineItem i : this.items) t += (i.getPrice()*i.getQuantity());
+        // for each item
+        for(LineItem i : this.items) t += (i.getPrice() * i.getQuantity());
 
         return t;
     }
